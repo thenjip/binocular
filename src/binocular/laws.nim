@@ -97,16 +97,15 @@ when isMainModule:
 
 
   func faultyReaderLabel (T: typedesc): Lens[Block[T], BlockLabel] =
-    lens((_: Block[T]) => "", label(T).writer())
+    label(T).write(reader(Block[T], BlockLabel), _ => "")
 
 
-  func faultyWriterLabel (
-    T: typedesc
-  ): Lens[ConditionalBlock[T], BlockLabel] =
-    lens(
-      thenLabel(T).read(),
-      (self: ConditionalBlock[T], _: BlockLabel) => self.write(thenLabel(T), "")
-    )
+  func faultyWriterLabel (T: typedesc): Lens[ConditionalBlock[T], BlockLabel] =
+    thenLabel(T)
+      .write(
+        writer(ConditionalBlock[T], BlockLabel),
+        (self, _) => self.write(thenLabel(T), "")
+      )
 
 
 
