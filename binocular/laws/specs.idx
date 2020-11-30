@@ -1,0 +1,8 @@
+IdentitySpec	binocular/laws/specs.html#IdentitySpec	specs: IdentitySpec	
+RetentionSpec	binocular/laws/specs.html#RetentionSpec	specs: RetentionSpec	
+DoubleWriteSpec	binocular/laws/specs.html#DoubleWriteSpec	specs: DoubleWriteSpec	
+LensLawsSpec	binocular/laws/specs.html#LensLawsSpec	specs: LensLawsSpec	
+identitySpec	binocular/laws/specs.html#identitySpec,S	specs: identitySpec[S](expected: S): IdentitySpec[S]	
+retentionSpec	binocular/laws/specs.html#retentionSpec,S,T	specs: retentionSpec[S; T](initial: S; expected: T): RetentionSpec[S, T]	
+doubleWriteSpec	binocular/laws/specs.html#doubleWriteSpec,S,T,T	specs: doubleWriteSpec[S; T](initial: S; first: T; second: T): DoubleWriteSpec[S, T]	
+lensLawsSpec	binocular/laws/specs.html#lensLawsSpec,IdentitySpec[S],RetentionSpec[S,T],DoubleWriteSpec[S,T]	specs: lensLawsSpec[S; T](identity: IdentitySpec[S]; retention: RetentionSpec[S, T];\n                   doubleWrite: DoubleWriteSpec[S, T]): LensLawsSpec[S, T]	

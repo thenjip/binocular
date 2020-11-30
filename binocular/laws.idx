@@ -1,0 +1,8 @@
+Laws	binocular/laws.html#laws	 Laws	
+Identity	binocular/laws.html#laws-identity	  Identity	
+Retention	binocular/laws.html#laws-retention	  Retention	
+Double write	binocular/laws.html#laws-double-write	  Double write	
+checkIdentity	binocular/laws.html#checkIdentity,Lens[S,T],IdentitySpec[S]	laws: checkIdentity[S; T](lens: Lens[S, T]; spec: IdentitySpec[S]): Verdict[S]	
+checkRetention	binocular/laws.html#checkRetention,Lens[S,T],RetentionSpec[S,T]	laws: checkRetention[S; T](lens: Lens[S, T]; spec: RetentionSpec[S, T]): Verdict[T]	
+checkDoubleWrite	binocular/laws.html#checkDoubleWrite,Lens[S,T],DoubleWriteSpec[S,T]	laws: checkDoubleWrite[S; T](lens: Lens[S, T]; spec: DoubleWriteSpec[S, T]): Verdict[S]	
+checkLensLaws	binocular/laws.html#checkLensLaws,Lens[S,T],LensLawsSpec[S,T]	laws: checkLensLaws[S; T](lens: Lens[S, T]; spec: LensLawsSpec[S, T]): LensLawsVerdict[\n    S, T]	

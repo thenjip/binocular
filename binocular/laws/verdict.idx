@@ -1,0 +1,4 @@
+Verdict	binocular/laws/verdict.html#Verdict	verdict: Verdict	
+LensLawsVerdict	binocular/laws/verdict.html#LensLawsVerdict	verdict: LensLawsVerdict	
+verdict	binocular/laws/verdict.html#verdict,T,T	verdict: verdict[T](actual, expected: T): Verdict[T]	
+lensLawsVerdict	binocular/laws/verdict.html#lensLawsVerdict,Verdict[S],Verdict[T],Verdict[S]	verdict: lensLawsVerdict[S; T](identity: Verdict[S]; retention: Verdict[T];\n                      doubleWrite: Verdict[S]): LensLawsVerdict[S, T]	

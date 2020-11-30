@@ -1,0 +1,28 @@
+MemberReader	binocular/plens.html#MemberReader	plens: MemberReader	
+MemberWriter	binocular/plens.html#MemberWriter	plens: MemberWriter	
+PLens	binocular/plens.html#PLens	plens: PLens	
+Lens	binocular/plens.html#Lens	plens: Lens	
+readStructType	binocular/plens.html#readStructType.t,typedesc[PLens[SR,R,W,SW]]	plens: readStructType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[SR]	
+readStructType	binocular/plens.html#readStructType.t,PLens[SR,R,W,SW]	plens: readStructType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[SR]	
+readMemberType	binocular/plens.html#readMemberType.t,typedesc[PLens[SR,R,W,SW]]	plens: readMemberType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[R]	
+readMemberType	binocular/plens.html#readMemberType.t,PLens[SR,R,W,SW]	plens: readMemberType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[R]	
+writtenMemberType	binocular/plens.html#writtenMemberType.t,typedesc[PLens[SR,R,W,SW]]	plens: writtenMemberType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[W]	
+writtenMemberType	binocular/plens.html#writtenMemberType.t,PLens[SR,R,W,SW]	plens: writtenMemberType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[W]	
+writtenStructType	binocular/plens.html#writtenStructType.t,typedesc[PLens[SR,R,W,SW]]	plens: writtenStructType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[SW]	
+writtenStateType	binocular/plens.html#writtenStateType.t,PLens[SR,R,W,SW]	plens: writtenStateType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[SW]	
+structType	binocular/plens.html#structType.t,typedesc[Lens[S,T]]	plens: structType[S; T; ](X: typedesc[Lens[S, T]]): typedesc[S]	
+structType	binocular/plens.html#structType.t,Lens[S,T]	plens: structType[S; T; ](self: Lens[S, T]): typedesc[S]	
+memberType	binocular/plens.html#memberType.t,typedesc[Lens[S,T]]	plens: memberType[S; T; ](X: typedesc[Lens[S, T]]): typedesc[T]	
+memberType	binocular/plens.html#memberType.t,Lens[S,T]	plens: memberType[S; T; ](self: Lens[S, T]): typedesc[T]	
+lens	binocular/plens.html#lens,MemberReader[SR,R],MemberWriter[SR,W,SW]	plens: lens[SR; R; W; SW](reader: MemberReader[SR, R]; writer: MemberWriter[SR, W, SW]): PLens[\n    SR, R, W, SW]	
+read	binocular/plens.html#read,PLens[SR,R,W,SW]	plens: read[SR; R; W; SW](self: PLens[SR, R, W, SW]): Reader[SR, R]	
+write	binocular/plens.html#write,PLens[SR,R,W,SW],	plens: write[SR; R; W; SW](self: PLens[SR, R, W, SW]; written: () -&gt; W): Reader[SR, SW]	
+modify	binocular/plens.html#modify,PLens[SR,R,W,SW],	plens: modify[SR; R; W; SW](self: PLens[SR, R, W, SW]; f: R -&gt; W): Reader[SR, SW]	
+read	binocular/plens.html#read,SR,PLens[SR,R,W,SW]	plens: read[SR; R; W; SW](struct: SR; lens: PLens[SR, R, W, SW]): R	
+write	binocular/plens.html#write,SR,PLens[SR,R,W,SW],W	plens: write[SR; R; W; SW](struct: SR; lens: PLens[SR, R, W, SW]; written: W): SW	
+modify	binocular/plens.html#modify,SR,PLens[SR,R,W,SW],	plens: modify[SR; R; W; SW](struct: SR; lens: PLens[SR, R, W, SW]; f: R -&gt; W): SW	
+chain	binocular/plens.html#chain,PLens[SR,R1,W1,SW],PLens[R1,R2,W2,W1]	plens: chain[SR; R1; W1; SW; R2; W2](self: PLens[SR, R1, W1, SW];\n                              other: PLens[R1, R2, W2, W1]): PLens[SR, R2, W2,\n    SW]	
+reader	binocular/plens.html#reader,typedesc,typedesc,typedesc,typedesc	plens: reader(SR, R, W, SW: typedesc): Lens[PLens[SR, R, W, SW], MemberReader[SR, R]]	
+writer	binocular/plens.html#writer,typedesc,typedesc,typedesc,typedesc	plens: writer(SR, R, W, SW: typedesc): Lens[PLens[SR, R, W, SW],\n                                     MemberWriter[SR, W, SW]]	
+reader	binocular/plens.html#reader,typedesc,typedesc	plens: reader(S, T: typedesc): Lens[Lens[S, T], MemberReader[S, T]]	
+writer	binocular/plens.html#writer,typedesc,typedesc	plens: writer(S, T: typedesc): Lens[Lens[S, T], MemberWriter[S, T, S]]	
