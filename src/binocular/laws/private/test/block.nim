@@ -14,7 +14,7 @@ type
 
 
 
-func `block`* [T](label: string; body: BlockBody[T]): Block[T] =
+func `block`* [T](label: BlockLabel; body: BlockBody[T]): Block[T] =
   Block[T](label: label, body: body)
 
 
