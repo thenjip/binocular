@@ -95,15 +95,15 @@ function main() {
   <a class="reference reference-toplevel" href="#7" id="57">Types</a>
   <ul class="simple simple-toc-section">
       <li><a class="reference" href="#MemberReader"
-    title="MemberReader[S; T] = Reader[S, T]"><wbr />Member<wbr />Reader<span class="attachedType"></span></a></li>
+    title="MemberReader[S; T] = Reader[S, T]">MemberReader</a></li>
   <li><a class="reference" href="#MemberWriter"
-    title="MemberWriter[SR; W; SW] = (readStruct: SR, written: W) -&gt; SW"><wbr />Member<wbr />Writer<span class="attachedType"></span></a></li>
+    title="MemberWriter[SR; W; SW] = (readStruct: SR, written: W) -&gt; SW">MemberWriter</a></li>
   <li><a class="reference" href="#PLens"
     title="PLens[SR; R; W; SW] = object
   reader: MemberReader[SR, R]
-  writer: MemberWriter[SR, W, SW]"><wbr />PLens<span class="attachedType"></span></a></li>
+  writer: MemberWriter[SR, W, SW]">PLens</a></li>
   <li><a class="reference" href="#Lens"
-    title="Lens[S; T] = PLens[S, T, T, S]"><wbr />Lens<span class="attachedType"></span></a></li>
+    title="Lens[S; T] = PLens[S, T, T, S]">Lens</a></li>
 
   </ul>
 </li>
@@ -112,17 +112,17 @@ function main() {
   <ul class="simple simple-toc-section">
       <ul class="simple nested-toc-section">modify
       <li><a class="reference" href="#modify%2CSR%2CPLens%5BSR%2CR%2CW%2CSW%5D%2C"
-    title="modify[SR; R; W; SW](struct: SR; lens: PLens[SR, R, W, SW]; f: R -&gt; W): SW">modify,SR,PLens[SR,R,W,SW],<span class="attachedType">PLens</span></a></li>
+    title="modify[SR; R; W; SW](struct: SR; lens: PLens[SR, R, W, SW]; f: R -&gt; W): SW">modify,<wbr>SR,<wbr>PLens[SR,<wbr>R,<wbr>W,<wbr>SW],<wbr></a></li>
 
   </ul>
   <ul class="simple nested-toc-section">write
       <li><a class="reference" href="#write%2CSR%2CPLens%5BSR%2CR%2CW%2CSW%5D%2CW"
-    title="write[SR; R; W; SW](struct: SR; lens: PLens[SR, R, W, SW]; written: W): SW">write,SR,PLens[SR,R,W,SW],W<span class="attachedType">PLens</span></a></li>
+    title="write[SR; R; W; SW](struct: SR; lens: PLens[SR, R, W, SW]; written: W): SW">write,<wbr>SR,<wbr>PLens[SR,<wbr>R,<wbr>W,<wbr>SW],<wbr>W</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">read
       <li><a class="reference" href="#read%2CSR%2CPLens%5BSR%2CR%2CW%2CSW%5D"
-    title="read[SR; R; W; SW](struct: SR; lens: PLens[SR, R, W, SW]): R">read,SR,PLens[SR,R,W,SW]<span class="attachedType">PLens</span></a></li>
+    title="read[SR; R; W; SW](struct: SR; lens: PLens[SR, R, W, SW]): R">read,<wbr>SR,<wbr>PLens[SR,<wbr>R,<wbr>W,<wbr>SW]</a></li>
 
   </ul>
 
@@ -133,45 +133,45 @@ function main() {
   <ul class="simple simple-toc-section">
       <ul class="simple nested-toc-section">modify
       <li><a class="reference" href="#modify%2CPLens%5BSR%2CR%2CW%2CSW%5D%2C"
-    title="modify[SR; R; W; SW](self: PLens[SR, R, W, SW]; f: R -&gt; W): Reader[SR, SW]">modify,PLens[SR,R,W,SW],<span class="attachedType">PLens</span></a></li>
+    title="modify[SR; R; W; SW](self: PLens[SR, R, W, SW]; f: R -&gt; W): Reader[SR, SW]">modify,<wbr>PLens[SR,<wbr>R,<wbr>W,<wbr>SW],<wbr></a></li>
 
   </ul>
   <ul class="simple nested-toc-section">lens
       <li><a class="reference" href="#lens%2CMemberReader%5BSR%2CR%5D%2CMemberWriter%5BSR%2CW%2CSW%5D"
     title="lens[SR; R; W; SW](reader: MemberReader[SR, R]; writer: MemberWriter[SR, W, SW]): PLens[
-    SR, R, W, SW]">lens,MemberReader[SR,R],MemberWriter[SR,W,SW]<span class="attachedType">MemberReader</span></a></li>
+    SR, R, W, SW]">lens,<wbr>MemberReader[SR,<wbr>R],<wbr>MemberWriter[SR,<wbr>W,<wbr>SW]</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">write
       <li><a class="reference" href="#write%2CPLens%5BSR%2CR%2CW%2CSW%5D%2C"
-    title="write[SR; R; W; SW](self: PLens[SR, R, W, SW]; written: () -&gt; W): Reader[SR, SW]">write,PLens[SR,R,W,SW],<span class="attachedType">PLens</span></a></li>
+    title="write[SR; R; W; SW](self: PLens[SR, R, W, SW]; written: () -&gt; W): Reader[SR, SW]">write,<wbr>PLens[SR,<wbr>R,<wbr>W,<wbr>SW],<wbr></a></li>
 
   </ul>
   <ul class="simple nested-toc-section">writer
       <li><a class="reference" href="#writer%2Ctypedesc%2Ctypedesc%2Ctypedesc%2Ctypedesc"
     title="writer(SR, R, W, SW: typedesc): Lens[PLens[SR, R, W, SW],
-                                     MemberWriter[SR, W, SW]]">writer,typedesc,typedesc,typedesc,typedesc<span class="attachedType">Lens</span></a></li>
+                                     MemberWriter[SR, W, SW]]">writer,<wbr>typedesc,<wbr>typedesc,<wbr>typedesc,<wbr>typedesc</a></li>
   <li><a class="reference" href="#writer%2Ctypedesc%2Ctypedesc"
-    title="writer(S, T: typedesc): Lens[Lens[S, T], MemberWriter[S, T, S]]">writer,typedesc,typedesc<span class="attachedType">Lens</span></a></li>
+    title="writer(S, T: typedesc): Lens[Lens[S, T], MemberWriter[S, T, S]]">writer,<wbr>typedesc,<wbr>typedesc</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">reader
       <li><a class="reference" href="#reader%2Ctypedesc%2Ctypedesc%2Ctypedesc%2Ctypedesc"
-    title="reader(SR, R, W, SW: typedesc): Lens[PLens[SR, R, W, SW], MemberReader[SR, R]]">reader,typedesc,typedesc,typedesc,typedesc<span class="attachedType">Lens</span></a></li>
+    title="reader(SR, R, W, SW: typedesc): Lens[PLens[SR, R, W, SW], MemberReader[SR, R]]">reader,<wbr>typedesc,<wbr>typedesc,<wbr>typedesc,<wbr>typedesc</a></li>
   <li><a class="reference" href="#reader%2Ctypedesc%2Ctypedesc"
-    title="reader(S, T: typedesc): Lens[Lens[S, T], MemberReader[S, T]]">reader,typedesc,typedesc<span class="attachedType">Lens</span></a></li>
+    title="reader(S, T: typedesc): Lens[Lens[S, T], MemberReader[S, T]]">reader,<wbr>typedesc,<wbr>typedesc</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">read
       <li><a class="reference" href="#read%2CPLens%5BSR%2CR%2CW%2CSW%5D"
-    title="read[SR; R; W; SW](self: PLens[SR, R, W, SW]): Reader[SR, R]">read,PLens[SR,R,W,SW]<span class="attachedType">PLens</span></a></li>
+    title="read[SR; R; W; SW](self: PLens[SR, R, W, SW]): Reader[SR, R]">read,<wbr>PLens[SR,<wbr>R,<wbr>W,<wbr>SW]</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">chain
       <li><a class="reference" href="#chain%2CPLens%5BSR%2CR1%2CW1%2CSW%5D%2CPLens%5BR1%2CR2%2CW2%2CW1%5D"
     title="chain[SR; R1; W1; SW; R2; W2](self: PLens[SR, R1, W1, SW];
                               other: PLens[R1, R2, W2, W1]): PLens[SR, R2, W2,
-    SW]">chain,PLens[SR,R1,W1,SW],PLens[R1,R2,W2,W1]<span class="attachedType">PLens</span></a></li>
+    SW]">chain,<wbr>PLens[SR,<wbr>R1,<wbr>W1,<wbr>SW],<wbr>PLens[R1,<wbr>R2,<wbr>W2,<wbr>W1]</a></li>
 
   </ul>
 
@@ -181,29 +181,29 @@ function main() {
   <a class="reference reference-toplevel" href="#18" id="68">Templates</a>
   <ul class="simple simple-toc-section">
       <li><a class="reference" href="#readStructType.t%2Ctypedesc%5BPLens%5BSR%2CR%2CW%2CSW%5D%5D"
-    title="readStructType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[SR]"><wbr />read<wbr />Struct<wbr />Type<span class="attachedType">PLens</span></a></li>
+    title="readStructType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[SR]">readStructType</a></li>
   <li><a class="reference" href="#readStructType.t%2CPLens%5BSR%2CR%2CW%2CSW%5D"
-    title="readStructType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[SR]"><wbr />read<wbr />Struct<wbr />Type<span class="attachedType">PLens</span></a></li>
+    title="readStructType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[SR]">readStructType</a></li>
   <li><a class="reference" href="#readMemberType.t%2Ctypedesc%5BPLens%5BSR%2CR%2CW%2CSW%5D%5D"
-    title="readMemberType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[R]"><wbr />read<wbr />Member<wbr />Type<span class="attachedType">PLens</span></a></li>
+    title="readMemberType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[R]">readMemberType</a></li>
   <li><a class="reference" href="#readMemberType.t%2CPLens%5BSR%2CR%2CW%2CSW%5D"
-    title="readMemberType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[R]"><wbr />read<wbr />Member<wbr />Type<span class="attachedType">PLens</span></a></li>
+    title="readMemberType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[R]">readMemberType</a></li>
   <li><a class="reference" href="#writtenMemberType.t%2Ctypedesc%5BPLens%5BSR%2CR%2CW%2CSW%5D%5D"
-    title="writtenMemberType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[W]"><wbr />written<wbr />Member<wbr />Type<span class="attachedType">PLens</span></a></li>
+    title="writtenMemberType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[W]">writtenMemberType</a></li>
   <li><a class="reference" href="#writtenMemberType.t%2CPLens%5BSR%2CR%2CW%2CSW%5D"
-    title="writtenMemberType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[W]"><wbr />written<wbr />Member<wbr />Type<span class="attachedType">PLens</span></a></li>
+    title="writtenMemberType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[W]">writtenMemberType</a></li>
   <li><a class="reference" href="#writtenStructType.t%2Ctypedesc%5BPLens%5BSR%2CR%2CW%2CSW%5D%5D"
-    title="writtenStructType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[SW]"><wbr />written<wbr />Struct<wbr />Type<span class="attachedType">PLens</span></a></li>
+    title="writtenStructType[SR; R; W; SW; ](X: typedesc[PLens[SR, R, W, SW]]): typedesc[SW]">writtenStructType</a></li>
   <li><a class="reference" href="#writtenStateType.t%2CPLens%5BSR%2CR%2CW%2CSW%5D"
-    title="writtenStateType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[SW]"><wbr />written<wbr />State<wbr />Type<span class="attachedType">PLens</span></a></li>
+    title="writtenStateType[SR; R; W; SW; ](self: PLens[SR, R, W, SW]): typedesc[SW]">writtenStateType</a></li>
   <li><a class="reference" href="#structType.t%2Ctypedesc%5BLens%5BS%2CT%5D%5D"
-    title="structType[S; T; ](X: typedesc[Lens[S, T]]): typedesc[S]"><wbr />struct<wbr />Type<span class="attachedType">Lens</span></a></li>
+    title="structType[S; T; ](X: typedesc[Lens[S, T]]): typedesc[S]">structType</a></li>
   <li><a class="reference" href="#structType.t%2CLens%5BS%2CT%5D"
-    title="structType[S; T; ](self: Lens[S, T]): typedesc[S]"><wbr />struct<wbr />Type<span class="attachedType">Lens</span></a></li>
+    title="structType[S; T; ](self: Lens[S, T]): typedesc[S]">structType</a></li>
   <li><a class="reference" href="#memberType.t%2Ctypedesc%5BLens%5BS%2CT%5D%5D"
-    title="memberType[S; T; ](X: typedesc[Lens[S, T]]): typedesc[T]"><wbr />member<wbr />Type<span class="attachedType">Lens</span></a></li>
+    title="memberType[S; T; ](X: typedesc[Lens[S, T]]): typedesc[T]">memberType</a></li>
   <li><a class="reference" href="#memberType.t%2CLens%5BS%2CT%5D"
-    title="memberType[S; T; ](self: Lens[S, T]): typedesc[T]"><wbr />member<wbr />Type<span class="attachedType">Lens</span></a></li>
+    title="memberType[S; T; ](self: Lens[S, T]): typedesc[T]">memberType</a></li>
 
   </ul>
 </li>
@@ -571,7 +571,7 @@ class="link-seesrc" target="_blank">Source</a>
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2020-11-30 16:47:00 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2020-12-04 11:00:34 UTC</small>
       </div>
     </div>
   </div>
