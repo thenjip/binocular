@@ -14,6 +14,10 @@ func nimblePackageName* (): string =
   "binocular"
 
 
+func srcDir* (): AbsoluteDir =
+  srcDirName()
+
+
 
 func nim* (f: FilePath): FilePath =
   f.addFileExt(nimExt())
