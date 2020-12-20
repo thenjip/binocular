@@ -11,7 +11,7 @@ license = "MIT"
 
 srcDir = srcDirName()
 
-requires "nim >= 1.4.0"
+requires "nim >= 1.4.2"
 requires [
   "https://github.com/thenjip/funcynim >= 0.2.2",
   "https://github.com/thenjip/nimonad >= 0.1.0",
