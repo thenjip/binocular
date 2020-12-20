@@ -5,7 +5,8 @@ func srcDirName* (): string =
 
 version = "0.1.0"
 author = "thenjip"
-description = "A library for Nim to implement functional references a.k.a. lenses."
+description =
+  "A library for Nim to implement functional references a.k.a. lenses."
 license = "MIT"
 
 srcDir = srcDirName()
