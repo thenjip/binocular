@@ -16,7 +16,7 @@ whole structure for each modification.
 - Objective-C
 - JavaScript
 - NimScript (not tested yet)
-- Compile time expressions in all the backends above (not tested yet)
+- Compile time expressions in all the backends above
 
 ## Installation
 
