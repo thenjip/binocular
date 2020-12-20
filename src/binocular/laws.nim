@@ -142,36 +142,39 @@ when isMainModule:
         "A well formed lens that can be used in compile time expressions",
         "should verify the lens laws."
       ].join($' '):
-        proc doTest [S; T](
-          lens: static proc (): Lens[S, T] {.nimcall, noSideEffect.};
-          spec: static LensLawsSpec[S, T]
-        ) =
-          const
-            verdict = lens().checkLensLaws(spec)
-            id = verdict.identity
-            ret = verdict.retention
-            doubleW = verdict.doubleWrite
+        when defined(js):
+          skip()
+        else:
+          proc doTest [S; T](
+            lens: static proc (): Lens[S, T] {.nimcall, noSideEffect.};
+            spec: static LensLawsSpec[S, T]
+          ) =
+            const
+              verdict = lens().checkLensLaws(spec)
+              id = verdict.identity
+              ret = verdict.retention
+              doubleW = verdict.doubleWrite
 
-          check:
-            id.actual == id.expected
-            ret.actual == ret.expected
-            doubleW.actual == doubleW.expected
+            check:
+              id.actual == id.expected
+              ret.actual == ret.expected
+              doubleW.actual == doubleW.expected
 
 
-        proc runTest1 () =
-          const initial = pair("abc", 0)
+          proc runTest1 () =
+            const initial = pair("abc", 0)
 
-          doTest(
-            () => right(initial.leftType(), initial.rightType()),
-            lensLawsSpec(
-              identitySpec(initial),
-              retentionSpec(initial, 1),
-              doubleWriteSpec(initial, 2, -5)
+            doTest(
+              () => right(initial.leftType(), initial.rightType()),
+              lensLawsSpec(
+                identitySpec(initial),
+                retentionSpec(initial, 1),
+                doubleWriteSpec(initial, 2, -5)
+              )
             )
-          )
 
 
-        runTest1()
+          runTest1()
 
 
 
